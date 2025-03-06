@@ -28,7 +28,8 @@ spec:
         - name: regcred
       containers:
         - name: prometheus-server
-          image: registry.smartforce.es.airbusds.corp/prom/prometheus:v2.2.1
+          #image: registry.smartforce.es.airbusds.corp/prom/prometheus:v2.2.1
+          image: https://hub.docker.com/r/prom/prometheus:latest
           args:
             - '--config.file=/etc/prometheus/prometheus.yml'
             - '--storage.tsdb.path=/prometheus/'
